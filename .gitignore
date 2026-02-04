@@ -1,0 +1,50 @@
+# --- Seguridad y Credenciales ---
+.aws/
+credentials
+config
+*.pem
+*.pub
+*.key
+
+# --- Frameworks de Infraestructura (IaC) ---
+
+# AWS CDK
+.cdk.staging/
+cdk.out/
+.parcel-cache/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
+*.tfvars
+*.tfvars.json
+
+# Serverless Framework
+.serverless/
+.layers/
+stack-output.json
+
+# --- Lenguajes y Entornos (Comunes en Lambdas) ---
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.env
+
+# Node.js
+node_modules/
+dist/
+build/
+.npm
+package-lock.json
+
+# --- Logs y Temporales ---
+*.log
+.DS_Store
+.idea/
+.vscode/
